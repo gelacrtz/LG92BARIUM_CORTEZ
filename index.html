@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: maroon;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #originalImage {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+   
+    <img id="originalImage" src="Car1.jpg" alt="Cars" width="1500">
+
+    <button class="button" onclick="changeImage()">Change Image</button>
+    <button class="button" onclick="revertImage()">Revert Image</button>
+
+    <script>
+        function revertImage() {
+            document.getElementById("originalImage").src = "showcar1.jpg"; width="350";
+        }
+
+        function changeImage() {
+            document.getElementById("originalImage").src = "showcar2.jpg"; width ="350";
+        }
+    </script>
+    
+</body>
+</html>
